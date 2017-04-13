@@ -20,9 +20,17 @@ global_config.is_test = is_test
 global_config.launch_nukes(nuke_id, target_x, target_y)
 ```
 
-# Configuration in Constructor
+# Dependency Injection
 
 ```
-launcher = NukeLauncher(global_config)
+launcher = NukeLauncher(is_test)
+launch_nukes(launcher, nuke_id, target_x, target_y)
+```
+
+# Configuration or injection in Constructor
+
+```
+launcher = NukeLauncher(is_test)
 launcher.launch_nukes(nuke_id, target_x, target_y)
 ```
+
