@@ -6,7 +6,7 @@
 launch_nukes(nuked_id, target_x, target_y, is_test)
 ```
 
-## globals
+## Globals
 
 ```
 global_config.is_test = is_test
