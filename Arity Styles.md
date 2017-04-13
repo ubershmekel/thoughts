@@ -27,7 +27,7 @@ global_config.launch_nuke(nuke_id, target_x, target_y)
 
 ```
 launcher = NukeLauncher(is_test)
-launch_nukes(launcher, nuke_id, target_x, target_y)
+launch_nuke(launcher, nuke_id, target_x, target_y)
 ```
 
 ## Constructor Configuration
