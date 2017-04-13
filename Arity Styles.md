@@ -3,7 +3,7 @@
 Function signatures should be concise. Extraneous function parameters are tedious, tedium promotes mistakes. But implicitly changing behaviors create invisible artifacts which may be hard to notice from reading the code. This post is a short exploration into this tension.
 
 ## Functional
-The most explicit, clear, and controlled. But the API is less ergonomic, less focused and perhaps overly verbose because `is_test` has nothing to do with launching a nuke.
+The most explicit, clear, and controlled. But the API is less ergonomic, less focused and perhaps overly verbose because `is_test` has nothing to do with launching a nuke. The main function of a large program having the sum of all of its descendants' arguments is the extreme case.
 
 ```
 launch_nuke(nuked_id, target_x, target_y, is_test)
