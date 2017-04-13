@@ -6,21 +6,21 @@
 launch_nukes(nuked_id, target_x, target_y, is_test)
 ```
 
-## Python globals
+## globals
 
 ```
 global_config.is_test = is_test
 launch_nuke(nuke_id, target_x, target_y)
 ```
 
-# Python Mega Class
+# Mega Class
 
 ```
 global_config.is_test = is_test
 global_config.launch_nukes(nuke_id, target_x, target_y)
 ```
 
-# Python Configuration in Constructor
+# Configuration in Constructor
 
 ```
 launcher = NukeLauncher(global_config)
