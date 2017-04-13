@@ -6,7 +6,7 @@ Function signatures should be concise. Extraneous function parameters are tediou
 The most explicit, clear, and controlled. But the API is less ergonomic, less focused and perhaps overly verbose because `is_test` has nothing to do with launching a nuke.
 
 ```
-launch_nukes(nuked_id, target_x, target_y, is_test)
+launch_nuke(nuked_id, target_x, target_y, is_test)
 ```
 
 ## Globals
@@ -20,7 +20,7 @@ launch_nuke(nuke_id, target_x, target_y)
 Conflates unrelated parts of the program.
 ```
 global_config.is_test = is_test
-global_config.launch_nukes(nuke_id, target_x, target_y)
+global_config.launch_nuke(nuke_id, target_x, target_y)
 ```
 
 ## Functional Dependency Injection
@@ -34,7 +34,7 @@ launch_nukes(launcher, nuke_id, target_x, target_y)
 
 ```
 launcher = NukeLauncher(is_test)
-launcher.launch_nukes(nuke_id, target_x, target_y)
+launcher.launch_nuke(nuke_id, target_x, target_y)
 ```
 
 ## Branching
@@ -42,7 +42,7 @@ May cause code duplication and the tests aren't covering the production code.
 
 ```
 if is_test:
-    test_launch_nukes(nuke_id, target_x, target_y)
+    test_launch_nuke(nuke_id, target_x, target_y)
 else:
-    launch_nukes(nuke_id, target_x, target_y)
+    launch_nuke(nuke_id, target_x, target_y)
 ```
