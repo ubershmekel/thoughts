@@ -10,7 +10,7 @@ launch_nuke(nuked_id, target_x, target_y, is_test)
 ```
 
 ## Globals
-Easy to arrange, harder to see and predict what the code will do.
+Easy to guarantee behaviors, harder to see and predict what the code will do, impossible to thread or cooperatively use multiple different instances.
 ```
 global_config.is_test = is_test
 launch_nuke(nuke_id, target_x, target_y)
