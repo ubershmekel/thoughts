@@ -10,7 +10,7 @@ launch_nuke(nuked_id, target_x, target_y, is_test)
 ```
 
 ## Globals
-Easy to guarantee behaviors, harder to see and predict what the code will do, impossible to thread or cooperatively use multiple different instances.
+Easy to guarantee behaviors (e.g. this avoids the potential bug of not passing `is_test` down), harder to see and predict what the code will do, impossible to thread or cooperatively use multiple different instances.
 ```
 global_config.is_test = is_test
 launch_nuke(nuke_id, target_x, target_y)
@@ -46,3 +46,7 @@ if is_test:
 else:
     launch_nuke(nuke_id, target_x, target_y)
 ```
+
+## Personal Preference
+
+It depends for which need but I personally like `Constructor Configuration` and `Globals` the most.
