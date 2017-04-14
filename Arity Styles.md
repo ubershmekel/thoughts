@@ -50,4 +50,4 @@ else:
 
 ## Personal Preference
 
-It depends for which need but I personally like `Constructor Configuration` and `Globals` the most.
+It depends but I personally like `Constructor Configuration` and `Globals` the most.
