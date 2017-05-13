@@ -6,7 +6,7 @@ Don't commit generated files.
 
 ## Advantages to committing generated files
 
-* Small changes to code generators can have giant impact. Committing and diffing the resulting change clarifies its impact.
+* A small change in a code generator can affect a large amount of files. Committing and diffing the resulting change clarifies its true impact.
 * The build is simpler and faster
 * Less dependance on external resources
 
