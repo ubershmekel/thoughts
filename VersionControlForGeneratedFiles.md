@@ -1,5 +1,9 @@
 # Version Control for Generated Files
 
+## My opinion
+
+Don't commit generated files.
+
 ## Advantages to committing generated files
 
 * Small changes to code generators can have giant impact. Committing and diffing the resulting change clarifies its impact.
