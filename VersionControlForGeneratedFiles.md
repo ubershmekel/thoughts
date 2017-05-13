@@ -1,6 +1,6 @@
 # Version Control for Generated Files
 
-## My opinion
+## My opinion for most of my use-cases
 
 Don't commit generated files.
 
