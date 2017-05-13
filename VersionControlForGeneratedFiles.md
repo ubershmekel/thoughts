@@ -26,8 +26,16 @@ Don't commit generated files.
 * The source files change very rarely (e.g. they come from a third party that only provides updates every few months or so).
 * You need to vet every line change in your system for safety, security or compliance.
 
+# Trollisms
 
-## Story of committing generated files gone wrong
+* Would you commit the generated binary result of a build?
+* Would you commit the generated binaries required to build the final product (so, obj, pdb, exe)?
+* Would you commit the compiler (gcc, visual studio)?
+* Would you commit the operating system (almost kind of can with docker)?
+* Would you commit the hardware spec of your pc?
+* Would you commit your computer's memory at the time of building? How many samples of it?
+
+## My negative experience with committing generated files
 
 At a previous employer we committed generated code. We had more than 10 active branches with overall about 100 commits per day. Spanning 2 products, 2 live releases, 4 releases in to the future for all of: art, server, client, data and code. The code repository and data repository both needed generated output from the other. There was an auto-merger that would make sure if you commit a hotfix to live that it would also reach the future release branches. A small change in source can be giant in generated. With different versions of the source file - a merge in source does not equal a merge in the generated output. So every merge required automating detection of source changes and triggering the various generation processes. We also had automated rules to never merge changes in the generated code because those were always local rebuilds to fix a previous bad merge in a branch.
 
