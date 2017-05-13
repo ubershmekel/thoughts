@@ -13,7 +13,7 @@ Don't commit generated files.
 ## Advantages to not committing generated files
 
 * Smaller source control footprint.
-* Smaller diffs that are denser in information.
+* Smaller diffs that are denser in information. Change succinctness can reduce bugs.
 * For library developers - it allows library users to consolidate dependencies.
 * No chance of a mismatch between the generated and source files.
 * No chance of accidentally editing the generated files.
